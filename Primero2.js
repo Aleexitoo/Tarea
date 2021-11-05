@@ -1,19 +1,31 @@
-//Multiplo de 3. escribe "drive"
+function isMultiple(valor, mult) {
+    const resp = valor % mult;
+    if (resp == 0)
+       return true;
+    else
+        return false
 
-let n = 0;
-do {
-    n = n + 3;
-    console.log(n)
-} while (n < 36);
-if (n = n + 3) {
-    console.log("drive")
 }
 
-let m = 0;
-do{
-    m = m + 5;
-    console.log(m)
-} while (m < 35);
-if (m = m + 5){
-    console.log("revel")
+
+function multiple() {
+    var min = 0;
+    for (var i = 100; i > min; i--) {
+        var mult3 = isMultiple(i, 3);
+        var mult5 = isMultiple(i, 5);
+        if (mult3 && mult5) {
+            console.log(i, "DriveRevel")
+        } else{
+            if (mult3) {
+                console.log(i, "Drive")
+            } else {
+                if (mult5) {
+                    console.log(i, "Revel")
+                } else{
+                    console.log(i, "Vacio")
+                }
+            }
+        }
+    }
 }
+multiple()

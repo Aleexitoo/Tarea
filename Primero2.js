@@ -9,10 +9,10 @@ function isMultiple(valor, mult) {
 
 
 function multiple() {
-    var min = 0;
+    const min = 0;
     for (var i = 100; i > min; i--) {
-        var mult3 = isMultiple(i, 3);
-        var mult5 = isMultiple(i, 5);
+        let mult3 = isMultiple(i, 3);
+        let mult5 = isMultiple(i, 5);
         if (mult3 && mult5) {
             console.log(i, "DriveRevel")
         } else{

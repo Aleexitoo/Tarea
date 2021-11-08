@@ -1,6 +1,6 @@
 function isMultiple(valor, mult) {
     const resp = valor % mult;
-    if (resp == 0)
+    if (resp === 0)
        return true;
     else
         return false
@@ -8,9 +8,12 @@ function isMultiple(valor, mult) {
 }
 
 
-function multiple() {
-    const max = 100;
-    for (var i = 1; i < max; i++) {
+function multiple(maximo) {
+    let max = 100;
+    if (maximo) {
+         max = maximo;
+    }
+    for (var i = 1; i <= max; i++) {
         let mult3 = isMultiple(i, 3);
         let mult5 = isMultiple(i, 5);
         if (mult3 && mult5) {
@@ -28,4 +31,5 @@ function multiple() {
         }
     }
 }
-multiple() 
+
+multiple()

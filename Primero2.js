@@ -9,20 +9,20 @@ function isMultiple(valor, mult) {
 
 
 function multiple() {
-    const min = 0;
-    for (var i = 100; i > min; i--) {
+    const min = 100;
+    for (var i = 0; i < min; i++) {
         let mult3 = isMultiple(i, 3);
         let mult5 = isMultiple(i, 5);
         if (mult3 && mult5) {
-            console.log(i, "DriveRevel")
+            console.log("DriveRevel")
         } else{
             if (mult3) {
-                console.log(i, "Drive")
+                console.log("Drive")
             } else {
                 if (mult5) {
-                    console.log(i, "Revel")
+                    console.log("Revel")
                 } else{
-                    console.log(i, "Vacio")
+                    console.log(i)
                 }
             }
         }

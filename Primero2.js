@@ -9,8 +9,8 @@ function isMultiple(valor, mult) {
 
 
 function multiple() {
-    const min = 100;
-    for (var i = 1; i < min; i++) {
+    const max = 100;
+    for (var i = 1; i < max; i++) {
         let mult3 = isMultiple(i, 3);
         let mult5 = isMultiple(i, 5);
         if (mult3 && mult5) {
